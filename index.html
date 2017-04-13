@@ -8,69 +8,183 @@
 </head>
 <body>
 
-<header>
-  <div class="logo">
-    <img src="./resources/images/ic-logo.svg" style="height: 48px"/>
-    <span>COLMAR</span><span style="color: grey">ACADEMY</span>
-  </div>
-  <div class="menu">
-    <span>On campus</span>
-    <span>Online</span>
-    <span>For companies</span>
-    <span>Sign in</span>
-  </div>
-</header>
-
-<div class="splash light-grey">
-  <div class="flex-col splash-left banner">
-    <img src="./resources/images/banner.jpg">
-  </div>
-  <div class="flex-col">
-    <div class="flex-col">
-      <h1>Learn something new everyday</h1>
-      <span class="latin-learn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-      <div class="black-button"><span>Start here</span></div>
+  <header>
+    <div class="logo nobile">
+      <img src="./resources/images/ic-logo.svg" style="height: 48px"/>
+      <span>COLMAR</span><span style="color: grey">ACADEMY</span>
     </div>
-  </div>
-</div>
-
-<div class="splash-practice">
-  <div class="flex-col splash-left info-main">
-    <img src="./resources/images/information-main.jpg">
-    <h1 class="practice_text">It doesn't hurt to keep practicing</h1>
-    <h4>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
-          nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
-          eget magna laoreet, efficitur dolor consequat, tristique ligula."</h4>
-    <h4 class="signature">Emmanuel, Sr Strategist at Hiring.com</h4>
-  </div>
-  <div class="flex-col border-left-light">
-    <div class="flex-row  info-main-right border-bot-light">
-      <img src="./resources/images/information-orientation.jpg" class="splash-sub-image">
-      <div class="flex-col center">
-        <h2 class="padding-8px-bot">Orientation date</h2>
-        <h4 class="padding-8px-bot">Tue 10/11 & Wed 10/12: 8am-3pm</h4>
-        <span class="link">Read more</span>
+    <div class="menu nobile">
+      <span>On campus</span>
+      <span>Online</span>
+      <span>For companies</span>
+      <span>Sign in</span>
+    </div>
+    <div class="mobile mobile-menu">
+      <img src="./resources/images/ic-logo.svg"/>
+      <img src="./resources/images/ic-on-campus.svg"/>
+      <img src="./resources/images/ic-online.svg"/>
+      <img src="./resources/images/ic-login.svg"/>
+    </div>
+  </header>
+  <div class="mobile greybox"></div>
+  <div class="under-header">
+    <div class="splash light-grey">
+      <div class="flex-col splash-left banner nobile">
+        <img src="./resources/images/banner.jpg">
+      </div>
+      <div class="flex-col splash-right">
+        <h1>Learn something new everyday</h1>
+        <span class="latin-learn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <div class="black-button">
+          <span>Start here</span>
+        </div>
       </div>
     </div>
-    <div class="flex-row">
-      <img src="./resources/images/information-campus.jpg" class="splash-sub-image">
-      <div class="flex-col center">
-        <h2 class="padding-8px-bot">Our campus</h2>
-        <h4 class="padding-8px-bot">Find which campus is close by you</h4>
-        <span class="link">Read more</span>
+
+    <div class="splash-practice">
+      <div class="flex-col splash-left info-main nobile">
+        <img src="./resources/images/information-main.jpg">
+        <h1 class="practice_text">It doesn't hurt to keep practicing</h1>
+        <h4>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+              nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
+              eget magna laoreet, efficitur dolor consequat, tristique ligula."</h4>
+        <h4 class="signature">Emmanuel, Sr Strategist at Hiring.com</h4>
+      </div>
+      <div class="flex-col info-main-right">
+        <div class="info-right-item orientation">
+          <img src="./resources/images/information-orientation.jpg" class="splash-sub-image">
+          <div class="flex-col info-right-item-text">
+            <h2 class="padding-8px-bot">Orientation date</h2>
+            <h4 class="padding-8px-bot">Tue 10/11 & Wed 10/12: 8am-3pm</h4>
+            <span class="link">Read more</span>
+          </div>
+        </div>
+        <div class="info-right-item">
+          <img src="./resources/images/information-campus.jpg" class="splash-sub-image">
+          <div class="flex-col info-right-item-text">
+            <h2 class="padding-8px-bot">Our campus</h2>
+            <h4 class="padding-8px-bot">Find which campus is close by you</h4>
+            <span class="link">Read more</span>
+          </div>
+        </div>
+        <div class="info-right-item guest-lecture">
+          <img src="./resources/images/information-guest-lecture.jpg" class="splash-sub-image">
+          <div class="flex-col info-right-item-text">
+            <h2 class="padding-8px-bot">Our guest lecture</h2>
+            <h4 class="padding-8px-bot">Join a keynote with Oliver Sack about music in medical treatment</h4>
+            <span class="link">Read more</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="flex-row light-grey">
-      <img src="./resources/images/information-guest-lecture.jpg" class="splash-sub-image">
-      <div class="flex-col center">
-        <h2 class="padding-8px-bot">Our guest lecture</h2>
-        <h4 class="padding-8px-bot">Join a keynote with Oliver Sack about music in medical treatment</h4>
-        <span class="link">Read more</span>
+
+    <div class="splash-classes" style="padding-bottom: 32px">
+      <span class="classes-header">Start learning</span>
+      <div class="flex-col nobile">
+        <div class="flex-row">
+          <div class="flex-col class">
+            <img src="./resources/images/course-software.jpg">
+            <div class="flex-col classes-text">
+              <h3>Software engineering</h3>
+              <h4 class="courses">COURSES</h4>
+              <span>Web Development, Mobile Development, iOT, APIs</span>
+            </div>
+          </div>
+          <div class="flex-col class">
+            <img src="./resources/images/course-computer-art.jpg">
+            <div class="flex-col classes-text">
+              <h3>Computer art</h3>
+              <h4 class="courses">COURSES</h4>
+              <span>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
+            </div>
+          </div>
+          <div class="flex-col class">
+            <img src="./resources/images/course-design.jpg">
+            <div class="flex-col classes-text">
+              <h3>Design</h3>
+              <h4 class="courses">COURSES</h4>
+              <span>User Experience Design, User Research, Visual Design</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-col class">
+            <img src="./resources/images/course-data.jpg">
+            <div class="flex-col classes-text">
+              <h3>Data</h3>
+              <h4 class="courses">COURSES</h4>
+              <span>Data Science, Big Data, SQL, Data Visualization</span>
+            </div>
+          </div>
+          <div class="flex-col class">
+            <img src="./resources/images/course-business.jpg">
+            <div class="flex-col classes-text">
+              <h3>Business</h3>
+              <h4 class="courses">Courses</h4>
+              <span>Product Development, Business Development, Startup</span>
+            </div>
+          </div>
+          <div class="flex-col class">
+            <img src="./resources/images/course-marketing.jpg">
+            <div class="flex-col classes-text">
+              <h3>Marketing</h3>
+              <h4 class="courses">COURSES</h4>
+              <span>Analytics, Content Marketing, Mobile Marketing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile mobile-classes">
+        <h2 class="mobile-class light-grey">Software engineering</h2>
+        <h2 class="mobile-class light-grey">Computer art</h2>
+        <h2 class="mobile-class light-grey">Design</h2>
+        <h2 class="mobile-class light-grey">Data</h2>
+        <h2 class="mobile-class light-grey">Business</h2>
+        <h2 class="mobile-class light-grey">Marketing</h2>
       </div>
     </div>
+
+    <hr class="mobile">
+
+    <div class="splash-thesis">
+      <h1 class="thesis-header">Thesis exhibit</h1>
+      <div class="flex-row">
+        <div class="flex-col thesis-left">
+          <video src="./resources/videos/thesis.mp4" style="width: 100%"></video>
+          <h3 class="nobile">Reimagine urban</h3>
+          <span class="nobile">Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+                nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam
+                eget magna laoreet, efficitur dolor consequat, tristique ligula.</span>
+        </div>
+        <div class="flex-col nobile">
+          <div class="thesis-item flex-row light-grey">
+            <img src="./resources/images/thesis-fisma.jpg">
+            <div class="thesis-sub-item flex-col">
+              <h3>Fisma: Design and</h3>
+              <span>Designer showcase of new prototype product</span>
+            </div>
+          </div>
+          <div class="thesis-item flex-row">
+            <img src="./resources/images/thesis-now-and-then.jpg">
+            <div class="thesis-sub-item flex-col">
+              <h3>Now and then</h3>
+              <span>Research study about New York</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="nobile">
+
+    <footer>
+      <span>&#9400;2016 Colmar Academy. All rights reserved</span>
+      <div class="nobile">
+        <span>Terms</span>
+        <span>Privacy</span>
+      </div>
+    </footer>
+
   </div>
-
-</div>
-
-</body>
-</html>
+  </body>
+  </html>

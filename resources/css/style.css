@@ -20,11 +20,26 @@ h2 {
   -webkit-margin-after: 0em;
 }
 
+h3 {
+  font-size: 28px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
 h4 {
   font-size: 22px;
   font-weight: normal;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
+}
+
+img {
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -39,10 +54,21 @@ h4 {
 
 .menu {
   display: inline-flex;
+  padding-right: 24px;
 }
 
 .menu span {
   padding-left: 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+.under-header {
+  border-left: ridge 1.5px grey;
+  border-right: ridge 1.5px grey;
+  border-bottom: ridge 1.5px grey;
 }
 
 .banner {
@@ -62,7 +88,18 @@ h4 {
 }
 
 .info-main-right {
+  padding-bottom: 60px;
+  border-left: solid 1.5px lightgrey;
+}
+
+.info-right-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.orientation {
   padding-top: 16px;
+  border-bottom: solid 1.5px lightgrey;
 }
 
 .signature {
@@ -73,31 +110,27 @@ h4 {
 .splash {
   display: flex;
   align-items: center;
-  border-left: ridge 1.5px grey;
-  border-right: ridge 1.5px grey;
 }
 
 .splash-practice {
   display: flex;
-  border-left: ridge 1.5px grey;
-  border-right: ridge 1.5px grey;
 }
 
 .light-grey {
   background: lightgrey;
 }
 
-.border-bot-light {
-  border-bottom: solid 1.5px lightgrey;
-}
-
-.border-left-light {
-  border-left: solid 1.5px lightgrey;
+.guest-lecture {
+  background: lightgrey;
 }
 
 .latin-learn {
   font-size: 32px;
   padding-bottom: 32px;
+}
+
+.splash-right {
+  margin-right: 40px;
 }
 
 .black-button {
@@ -126,14 +159,13 @@ h4 {
   flex-direction: row;
 }
 
-.center {
+.info-right-item-text {
   justify-content: center;
 }
 
 .splash-sub-image {
   width: 35%;
   padding: 16px;
-  object-fit: cover;
 }
 
 .link {
@@ -143,4 +175,180 @@ h4 {
 
 .padding-8px-bot {
   padding-bottom: 8px;
+}
+
+.splash-classes {
+  display: flex;
+  flex-direction: column;
+  background: lightgrey;
+}
+
+.classes-header {
+  padding: 32px 0px;
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+}
+
+.class {
+  padding: 0px 16px;
+  width: 30%;
+}
+
+.classes-text {
+  padding: 16px 24px 24px 16px;
+  background: white;
+}
+
+.classes-text span {
+  padding-bottom: 24px;
+}
+
+.courses {
+  padding: 8px 0px;
+}
+
+.splash-thesis {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 32px 24px
+}
+
+.thesis-header {
+  padding: 32px 0px;
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+}
+
+.thesis-left {
+  width: 60%;
+  padding-right: 16px;
+}
+
+.thesis-left video {
+  padding-bottom: 24px;
+}
+
+.thesis-item {
+  height: 168px;
+}
+
+.thesis-item img {
+  width: 35%;
+  padding: 16px;
+}
+
+.thesis-sub-item {
+  justify-content: center;
+}
+
+.thesis-sub-item span {
+  padding-top: 16px;
+}
+
+footer span {
+  padding-left: 24px;
+}
+
+footer div {
+  padding-right: 24px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .mobile {
+    display: block;
+  }
+
+  .nobile {
+    display: none;
+  }
+
+  .greybox {
+    height: 180px;
+    display: block;
+    background-color: grey;
+  }
+
+  .mobile-menu {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px;
+  }
+
+  .splash-practice {
+    justify-content: center;
+  }
+
+  .splash-right {
+    padding: 32px 12px;
+    margin-right: auto;
+  }
+
+  .splash-right h1 {
+    padding-bottom: 32px;
+  }
+
+  .splash-right span {
+    padding-bottom: 24px;
+  }
+
+  .splash-sub-image {
+    width: 100%;
+  }
+
+  .info-main-right {
+    width: 80%;
+    border-left: none;
+  }
+
+  .info-right-item {
+    flex-direction: column;
+  }
+
+  .info-right-item-text {
+    padding-left: 32px;
+  }
+
+  .orientation {
+    border-bottom: none;
+  }
+  
+  .guest-lecture {
+    background: none;
+  }
+
+  .splash-classes {
+    background: none;
+  }
+
+  .classes-header {
+    padding: 32px 0px 24px 0px;
+  }
+
+  .mobile-classes {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobile-class {
+    padding: 16px;
+    margin: 8px 16px 0px 16px;
+    background: lightgrey;
+  }
+
+  .splash-thesis {
+    padding: 0px 0px 24px 0px;
+  }
+
+  .thesis-left {
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  footer {
+    justify-content: center;
+    padding: 16px 0px;
+  }
 }
